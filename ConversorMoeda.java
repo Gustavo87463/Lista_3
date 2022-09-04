@@ -1,17 +1,20 @@
 public class ConversorMoeda {
     
-    private double dolar;
-    private double qnt;
-
-    public ConversorMoeda(double dolar, double qnt) {
-        this.dolar = dolar;
-        this.qnt = qnt;
-    }
-
-
-    public void Imposto(double dolar, double qnt){ //c = conta_total
-
-        double c = (dolar*qnt)*6/100;
-        System.out.println();
-    }
+    
+        private double dolar;
+        private double quantidade;
+    
+        public ConversorMoeda(double dolar, double quantidade) {
+            this.dolar = dolar;
+            this.quantidade = quantidade;
+        }
+    
+    
+        public void Imposto(double dolar, double quantidade){ 
+    
+            double total = (dolar*quantidade)*6/100;
+            double total2 = (dolar*quantidade)+total;
+            System.out.println("Funcionário: Valor a ser pago em reais = " + total2);
+        }
 }
+
